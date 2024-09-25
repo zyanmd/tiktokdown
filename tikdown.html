@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TikTok Downloader</h1>
+    <p>Enter the TikTok video URL below to download your favorite videos without watermarks.</p>
+    
+    <input type="text" id="urlInput" placeholder="MASUKAN URL">
+    
+    <div id="buttonContainer">
+        <button id="downloadVideo">Download Video (No Watermark)</button>
+        <button id="downloadVideoWM">Download Video (With Watermark)</button>
+        <button id="downloadAudio">Download Audio</button>
+    </div>
+
+    <div id="videoDisplay">
+        <h2>Downloaded Video</h2>
+        <video controls id="videoPlayer">
+            <source id="videoSource" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <p>Simply paste the TikTok URL in the input box and click the desired download button.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
